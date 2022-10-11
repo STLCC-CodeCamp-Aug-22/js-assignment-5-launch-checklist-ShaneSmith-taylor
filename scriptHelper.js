@@ -79,6 +79,7 @@ async function myFetch("https://handlers.education.launchcode.org/static/planets
 }
 
 function pickPlanet(planets) {
+    return planets[Math.floor(Math.random()*planets.length)];
 }
 
 module.exports.addDestinationInfo = addDestinationInfo;
